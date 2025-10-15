@@ -18,9 +18,9 @@ $allowed = [
     'resp_juge' => ['acces_competitions', 'listing_juges', 'gestion_juges', 'juges_invalides', 'default'],
     'admin' => ['liste_responsables', 'acces_engagements', 'liste_competitions', 'utilisateurs', 'niveaux_admin', 'default'],
     
-    // Pages simples de votre ancienne liste
+    // Pages simples 
     'qcm' => ['default'],
-    'creer_compet' => ['default'], // Assurez-vous que le fichier 'creer_compet.php' existe
+    'creer_compet' => ['default'], 
     'new_account' => ['default'],
     'lost_id' => ['default'],
     'contact' => ['default'],
@@ -108,5 +108,6 @@ if (isset($allowed[$page]) && in_array($subpage, $allowed[$page])) {
     </script>
 
 </body>
+
 
 </html>
